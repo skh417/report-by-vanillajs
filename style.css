@@ -5,6 +5,7 @@
   --theme-red: #db3a34;
   --theme-blue: #084c61;
   --theme-green: #177e89;
+  --theme-background: #ebebeb;
 
   /* font size */
   --font-xs: 8px;
@@ -19,11 +20,19 @@
   --font-regular: 600;
   --font-medium: 700;
   --font-bold: 800;
+
+  /* width */
+  --width-default: 1000px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Lato, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 body {
   position: relative;
-  box-sizing: border-box;
   margin: 0;
   font-size: var(--font-rg);
 }
@@ -50,4 +59,85 @@ p {
 a {
   cursor: pointer;
   text-decoration: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 100px;
+  background: #fff;
+}
+
+.header-top-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-top-left > span {
+  padding-bottom: 5px;
+}
+
+.header-top-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+}
+
+.header-top-right > span {
+  width: 2px;
+  height: 30%;
+  background: var(--theme-gray);
+}
+
+.logo {
+  width: 100px;
+}
+
+select {
+  width: 200px;
+  padding: 2px 6px;
+  border: 1px solid var(--theme-gray);
+  border-radius: 4px;
+}
+
+#report-list-select {
+  margin-left: 10px;
+}
+
+.nav-container {
+  height: 60px;
+  background: var(--theme-gray);
+}
+
+.nav-container nav {
+  display: flex;
+  align-items: flex-end;
+  width: var(--width-default);
+  height: 100%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.nav-container nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-container nav ul li {
+  width: 25%;
+  padding-bottom: 5px;
+  text-align: center;
+  font-size: var(--font-lg);
+  border-bottom: 4px solid pink;
+  cursor: pointer;
+}
+
+main {
+  height: 100vh;
+  background: var(--theme-background);
 }
