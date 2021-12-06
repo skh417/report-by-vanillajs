@@ -1,0 +1,53 @@
+:root {
+  /* color palette */
+  --theme-gray: #323031;
+  --theme-yellow: #ffc857;
+  --theme-red: #db3a34;
+  --theme-blue: #084c61;
+  --theme-green: #177e89;
+
+  /* font size */
+  --font-xs: 8px;
+  --font-sm: 12px;
+  --font-rg: 16px;
+  --font-lg: 20px;
+  --font-xl: 24px;
+
+  /* font weight */
+  --font-lighter: 400;
+  --font-light: 500;
+  --font-regular: 600;
+  --font-medium: 700;
+  --font-bold: 800;
+}
+
+body {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: var(--font-rg);
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
