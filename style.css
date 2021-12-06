@@ -61,6 +61,12 @@ a {
   text-decoration: none;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  min-width: var(--width-default);
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -138,6 +144,25 @@ select {
 }
 
 main {
+  padding: 140px 0;
   height: 100vh;
   background: var(--theme-background);
+}
+
+footer {
+  height: 200px;
+  padding: 50px 0;
+  color: #fff;
+  background: var(--theme-gray);
+}
+
+.footer {
+  width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.footer .copyright {
+  margin-top: 10px;
+  color: #999;
 }
