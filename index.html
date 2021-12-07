@@ -13,8 +13,11 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d87806836a.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -46,16 +49,32 @@
       <div class="nav-container">
         <nav>
           <ul>
-            <li>메뉴 123</li>
-            <li>메뉴 345</li>
-            <li>메뉴 678</li>
-            <li>메뉴 91011</li>
-            <li>메뉴 111213</li>
+            <li>메뉴 [1]</li>
+            <li>메뉴 [2]</li>
+            <li>메뉴 [3]</li>
+            <li>메뉴 [4]</li>
+            <li>메뉴 [5]</li>
           </ul>
         </nav>
       </div>
     </header>
-    <main></main>
+
+    <!-- main content mark up -->
+    <main>
+      <section class="report">
+        <h2 class="report-title">
+          <span class="report-icon"><i class="fas fa-server"></i></span> 리포트
+          타이틀
+        </h2>
+        <article class="report-body">
+          <div class="report-body-section">
+            <h3>소 제목</h3>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- footer -->
     <footer>
       <div class="footer">
         <div class="logo">
@@ -65,7 +84,13 @@
             style="height: 100%; width: 100%; object-fit: contain"
           />
         </div>
-        <p class="copyright">Phone: 010-7337-8738 | Email: skh417@gmail.com</p>
+        <p class="copyright">
+          <i class="fas fa-mobile-alt"></i>
+          <span>010-7337-8738</span>
+          <span>|</span>
+          <i class="fas fa-envelope"></i>
+          <span>skh417@gmail.com</span>
+        </p>
         <p class="copyright">Copyright © 2021 SPK By K H SIM.</p>
       </div>
     </footer>

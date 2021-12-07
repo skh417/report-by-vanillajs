@@ -149,6 +149,35 @@ main {
   background: var(--theme-background);
 }
 
+.report {
+  width: var(--width-default);
+  margin: 40px auto;
+}
+
+.report-icon {
+  margin-right: 5px;
+}
+
+.report-title {
+  padding: 20px 40px;
+  font-size: var(--font-lg);
+  background: var(--theme-gray);
+  color: #fff;
+}
+
+.report-body {
+  padding: 0 40px;
+  background: #fff;
+}
+
+.report-body-section {
+  padding: 20px 0;
+}
+
+.report-body-section h3 {
+  font-weight: var(--font-medium);
+}
+
 footer {
   height: 200px;
   padding: 50px 0;
