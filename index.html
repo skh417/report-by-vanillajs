@@ -63,12 +63,40 @@
     <main>
       <section class="report">
         <h2 class="report-title">
-          <span class="report-icon"><i class="fas fa-server"></i></span> 리포트
-          타이틀
+          <span class="report-icon"><i class="fas fa-server"></i></span>
+          서버 취약점 진단 결과
         </h2>
-        <article class="report-body">
-          <div class="report-body-section">
-            <h3>소 제목</h3>
+        <article class="report-content">
+          <div class="report-content-summary">
+            <h3 class="sub-title">소 제목</h3>
+            <div class="summary-wrap">
+              <div class="summary">
+                <p class="summary-p">
+                  파악된 취약점은 총 <span>-</span>개 입니다.
+                </p>
+                <p class="summary-vuln">위험등급 <span>--</span></p>
+                <p class="summary-p-gray">
+                  파악된 취약점에 대한 빠른 조치를 권장합니다.
+                </p>
+              </div>
+              <div class="summary">
+                <div class="summary-flex">
+                  <div>이번 진단 취약점</div>
+                  <div><span>-</span> 건</div>
+                </div>
+                <div class="summary-flex">
+                  <div>지난 진단 취약점</div>
+                  <div><span>-</span> 건</div>
+                </div>
+                <div class="summary-flex">
+                  <div>지난 진단 대비 취약점 변화</div>
+                  <div><span>-</span> 건</div>
+                </div>
+              </div>
+              <div>
+                <canvas id="myChart"></canvas>
+              </div>
+            </div>
           </div>
         </article>
       </section>
@@ -94,5 +122,12 @@
         <p class="copyright">Copyright © 2021 SPK By K H SIM.</p>
       </div>
     </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js"
+      integrity="sha512-tMabqarPtykgDtdtSqCL3uLVM0gS1ZkUAVhRFu1vSEFgvB73niFQWJuvviDyBGBH22Lcau4rHB5p2K2T0Xvr6Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="my-chart.js" defer></script>
   </body>
 </html>

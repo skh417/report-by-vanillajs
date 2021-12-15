@@ -1,6 +1,7 @@
 :root {
   /* color palette */
   --theme-gray: #323031;
+  --theme-light-gray: #e5e5e5;
   --theme-yellow: #ffc857;
   --theme-red: #db3a34;
   --theme-blue: #084c61;
@@ -165,17 +166,61 @@ main {
   color: #fff;
 }
 
-.report-body {
+.report-content {
   padding: 0 40px;
   background: #fff;
 }
 
-.report-body-section {
+.report-content-summary {
   padding: 20px 0;
 }
 
-.report-body-section h3 {
+h3.sub-title {
   font-weight: var(--font-medium);
+}
+
+.summary-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--theme-light-gray);
+}
+
+.summary-wrap .summary:first-child {
+  text-align: center;
+  border-right: 1px solid var(--theme-light-gray);
+}
+
+.summary-wrap .summary:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.summary {
+  width: 50%;
+  padding: 0 40px;
+}
+
+.summary-p,
+.summary-p-gray {
+  font-size: 12px;
+}
+
+.summary-p-gray {
+  color: var(--theme-gray);
+}
+
+.summary-vuln {
+  font-size: 24px;
+}
+
+.summary-flex {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
 }
 
 footer {
