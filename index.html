@@ -68,7 +68,7 @@
         </h2>
         <article class="report-content">
           <div class="report-content-summary">
-            <h3 class="sub-title">소 제목</h3>
+            <h3 class="sub-title">서버 취약점 종합등급</h3>
             <div class="summary-wrap">
               <div class="summary">
                 <p class="summary-p">
@@ -93,10 +93,40 @@
                   <div><span>-</span> 건</div>
                 </div>
               </div>
-              <div>
-                <canvas id="myChart"></canvas>
-              </div>
             </div>
+          </div>
+          <div class="chart-container">
+            <h3 class="sub-title">최근 서버 취약점 진단 추이</h3>
+            <canvas id="myChart" style="height: 200px; width: 100%"></canvas>
+          </div>
+        </article>
+        <article class="report-content-add">
+          <div class="result-table-container">
+            <h3 class="sub-title">
+              Vulnerabilities found for server-side software
+            </h3>
+            <table class="scan-result-table">
+              <thead>
+                <tr>
+                  <th width="90px">위험도</th>
+                  <th width="90px">CVSS</th>
+                  <th width="150px">CVE</th>
+                  <th>요약</th>
+                  <th width="90px">Exploit</th>
+                  <th width="90px">대상</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>--</td>
+                  <td>0</td>
+                  <td>--</td>
+                  <td>--</td>
+                  <td>--</td>
+                  <td>--</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </article>
       </section>

@@ -66,6 +66,7 @@ header {
   position: fixed;
   width: 100%;
   min-width: var(--width-default);
+  z-index: 900;
 }
 
 .header {
@@ -146,11 +147,11 @@ select {
 
 main {
   padding: 140px 0;
-  height: 100vh;
+  min-height: 100vh;
   background: var(--theme-background);
 }
 
-.report {
+section.report {
   width: var(--width-default);
   margin: 40px auto;
 }
@@ -167,12 +168,50 @@ main {
 }
 
 .report-content {
-  padding: 0 40px;
+  position: relative;
+  border-bottom: 1px solid var(--theme-light-gray);
+}
+
+.report-content {
+  padding: 40px;
+  background: #fff;
+}
+
+.report-content-add {
+  padding: 40px;
   background: #fff;
 }
 
 .report-content-summary {
   padding: 20px 0;
+}
+
+.scan-result-table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+  border-color: gray;
+}
+
+.scan-result-table thead {
+  background: var(--theme-background);
+  border-color: gray;
+}
+
+th {
+  color: #808080;
+}
+td {
+  vertical-align: baseline;
+}
+th,
+td {
+  text-align: left;
+  font-size: 14px;
+  padding: 10px;
+
+  border-right: 1px solid rgba(62, 67, 69, 0.3);
+  border-bottom: 1px solid rgba(62, 67, 69, 0.3);
 }
 
 h3.sub-title {
@@ -228,6 +267,10 @@ footer {
   padding: 50px 0;
   color: #fff;
   background: var(--theme-gray);
+}
+
+.chart-container {
+  padding: 20px 0;
 }
 
 .footer {
