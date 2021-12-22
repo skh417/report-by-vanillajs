@@ -1,3 +1,5 @@
+"use strict";
+
 const labels = ["1월", "2월", "3월", "4월", "5월"];
 const datasets = [
   {

@@ -137,15 +137,15 @@ select {
   width: 100%;
 }
 
-.menu-under-bar {
+.nav-container nav .menu-under-bar {
   position: absolute;
   left: 0px;
   bottom: 0;
-  content: "";
+  width: 200px;
   height: 3px;
   background: #fff;
   transition: transform 0.1s ease;
-  transform: translate3d(10px, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .nav-container nav ul li {
@@ -153,8 +153,12 @@ select {
   padding-bottom: 5px;
   text-align: center;
   font-size: var(--font-lg);
-  border-bottom: 4px solid transparent;
   cursor: pointer;
+  color: gray;
+}
+
+.nav-container nav ul li.active {
+  color: #fff;
 }
 
 main {

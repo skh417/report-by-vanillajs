@@ -1,3 +1,7 @@
+"use strict";
+
+console.log(scrollY < section[0].offsetTop);
+
 Array.prototype.forEach.call(navMenus, (list) => {
   list.addEventListener("click", function () {
     const index = this.getAttribute("index");
@@ -18,14 +22,14 @@ const menuUnderbarHandler = (idx) => {
   menuUnderbar.style.width = `${navMenus[idx].offsetWidth}px`;
   menuUnderbar.style.transform = `translate3d(${navMenus[idx].offsetLeft}px, 0 ,0)`;
   navMenus.forEach((li) =>
-    li.getAttribute("index") == idx
+    Number(li.getAttribute("index")) === idx
       ? (li.className = "active")
       : (li.className = "")
   );
 };
 
 function moveMenuUnderbar() {
-  if (window.scrollY < section[1].offsetTop) {
+  if (window.scrollY < section[0].offsetTop) {
     menuUnderbarHandler(0);
   }
   if (window.scrollY > section[1].offsetTop - 300) {
@@ -41,3 +45,14 @@ function moveMenuUnderbar() {
     menuUnderbarHandler(4);
   }
 }
+
+// 상세내역 펼쳐보기, 감추기
+Array.prototype.forEach.call(extensionButtons, function (button) {
+  button.addEventListener("click", function () {
+    let secIndex = this.getAttribute("secIndex");
+
+    if (secIndex) {
+      toggleHidenShowClass(secIndex, this);
+    }
+  });
+});
