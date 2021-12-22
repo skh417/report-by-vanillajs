@@ -34,4 +34,11 @@ const config = {
   options: {},
 };
 
-const myChart = new Chart(document.querySelector("#myChart"), config);
+const serverChart = new Chart(document.querySelector("#sever-chart"), config);
+const webChart = new Chart(document.querySelector("#web-chart"), config);
+const subdomainChart = new Chart(
+  document.querySelector("#subdomain-chart"),
+  config
+);
+const techChart = new Chart(document.querySelector("#tech-chart"), config);
+// const myChart = new Chart(document.querySelector("#sever-chart"), config);
